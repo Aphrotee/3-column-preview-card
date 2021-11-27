@@ -34,17 +34,40 @@
         }
         .button {
             background: white; 
-            border: none;
+            border-style: solid;
             padding: 15px 32px;
+            border-color: white;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
             font-family: Lexend Deca;
             border-radius: 25px;
-            margin-bottom: 40px;
-            margin-left: 40px; 
-            margin-top: 20px;
+            border-width: 2px;
+            margin-left: 40px;
+            margin-bottom: 45px;
+        }
+        .button-one{color:hsl(31, 77%, 52%) ;}
+        .button-two{color:hsl(184, 100%, 22%) ;}
+        .button-three{color:hsl(179, 100%, 13%) ;}
+        .button-one:hover{ background:hsl(31, 77%, 52%) ;
+                       border-width: 2px;
+                       border-color: white;
+                       color: white;
+                       transition: 0.4s;
+                       font-family: Lexend Deca
+        }
+        .button-two:hover{ background:hsl(184, 100%, 22%) ;
+                       border-width: 2px; 
+                       border-color: white;
+                       color: white;
+                       transition: 0.4s;
+        }
+        .button-three:hover{ background:hsl(179, 100%, 13%) ;
+                       border-width: 2px;
+                       border-color: white;
+                       color: white;
+                       transition: 0.4s;
         }
         .attribution { font-size: 11px; text-align: center; }
         .attribution a { color: hsl(228, 45%, 44%); }
@@ -74,7 +97,7 @@
                 </div>   
                      <br/><br/>
                 <div>
-                    <input style="color:hsl(31, 77%, 52%);" class="button" type="button" value="Learn More">
+                    <input class="button button-one" type="button" value="Learn More">
                 </div>
             </div>
     <br/>
@@ -93,7 +116,7 @@
                 </div>   
                 <br/><br/>
                 <div>
-                    <input class="button" style="color:hsl(184, 100%, 22%);" type="button" value="Learn More">
+                    <input class="button button-two" type="button" value="Learn More">
                 </div>
             </div>   
                 <br/>
@@ -114,7 +137,7 @@
         
                 <br/><br/>
                 <div></div>
-                    <input class="button" style="color:hsl(179, 100%, 13%);" type="button" value="Learn More">
+                    <input class="button button-three" type="button" value="Learn More">
                 </div>
             </div> 
         </div>
