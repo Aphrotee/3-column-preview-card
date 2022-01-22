@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&display=swap');
+           
+        .column-one{
+            background:hsl(31, 77%, 52%);
+            grid: one;
+        }
+        .column-two{
+            background:hsl(184, 100%, 22%);
+            grid-area: two;
+        }
+        .column-three{
+            background:hsl(179, 100%, 13%);
+            grid-area: three;
+        }
+
+        .column-head{ font-weight: 900;
+            font-size: 40px;
+            font-family: Big Shoulders Display;
+            margin-top: 30px ;
+            margin-bottom: 30px ;
+            margin-left: 40px;
+            color:whitesmoke ;
+        }
+        .column-body{ font-weight: 400;
+            font-family: Lexend Deca;
+            margin-left: 40px;
+            margin-right: 40px;
+            color:White;
+        }
+        .image{margin-top: 45px;
+               margin-left: 40px;
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            border-radius: 25px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 0px;
+            grid-template-areas: "one" "two" "three";
+
+        }
+        .button {
+            background: white; 
+            border-style: solid;
+            padding: 15px 32px;
+            border-color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: Lexend Deca;
+            border-radius: 25px;
+            border-width: 2px;
+            margin-left: 40px;
+            margin-bottom: 45px;
+        }
+        .button-one{color:hsl(31, 77%, 52%) ;}
+        .button-two{color:hsl(184, 100%, 22%) ;}
+        .button-three{color:hsl(179, 100%, 13%) ;}
+        .button-one:hover{ background:hsl(31, 77%, 52%) ;
+                       border-width: 2px;
+                       border-color: white;
+                       color: white;
+                       transition: 0.4s;
+                       font-family: Lexend Deca
+        }
+        .button-two:hover{ background:hsl(184, 100%, 22%) ;
+                       border-width: 2px; 
+                       border-color: white;
+                       color: white;
+                       transition: 0.4s;
+        }
+        .button-three:hover{ background:hsl(179, 100%, 13%) ;
+                       border-width: 2px;
+                       border-color: white;
+                       color: white;
+                       transition: 0.4s;
+        }
+
+        @media screen and (min-width: 600px){
+            .container{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px;
+                grid-template-areas: "one two three";
+            }
+            
+        }
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
